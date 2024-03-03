@@ -81,7 +81,7 @@
         if(timer !== null){
             clearInterval(timer)
         }
-       timer =  setInterval(setTime, 10)
+       timer =  setInterval(setTime, 100)
     })
     pause.addEventListener('click',function(){
          clearInterval(timer);
@@ -94,7 +94,7 @@
     })
    function setTime(){
     misec++
-    if(misec == 60){
+    if(misec == 10){
         misec = 0 
          sec++
          if(sec == 60){
